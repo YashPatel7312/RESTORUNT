@@ -1,0 +1,60 @@
+/* card mate ne csss aya thi start  */
+.review {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+
+.aboutparent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 120px;
+}
+
+/* Remove manual grid placement (parentdiv1..4) */
+.parentdiv1,
+.parentdiv2,
+.parentdiv3,
+.parentdiv4 {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .aboutparent {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 60px;
+    gap: 20px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .aboutparent {
+    grid-template-columns: 1fr;
+    margin: 0 40px;
+    gap: 20px;
+  }
+
+  .review {
+    font-size: 32px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .aboutparent {
+    margin: 0 20px;
+    gap: 16px;
+  }
+
+  .review {
+    font-size: 26px;
+  }
+}

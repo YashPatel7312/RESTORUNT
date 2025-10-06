@@ -1,0 +1,146 @@
+.profile-card {
+  width: 100%;
+  max-width: 550px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1.5px solid rgba(0, 0, 0, 0.164);
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  margin-bottom: 3rem !important;
+  margin-top: 3rem 48px !important;
+}
+
+/* ==================== */
+/* Main Section */
+/* ==================== */
+.profile-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  text-align: start;
+}
+
+.profile-main p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* ==================== */
+/* Footer Section */
+/* ==================== */
+.profile-footer {
+  border-top: 1.5px solid rgba(0, 0, 0, 0.164);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #020202;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #198754;
+  margin: 0;
+}
+
+/* ==================== */
+/* Responsive Breakpoints */
+/* ==================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .profile-card {
+    max-width: 90%;
+  }
+
+  .profile-main p {
+    font-size: 15px;
+  }
+
+  .profile-pic {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Mobiles (landscape & small tablets) */
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 95%;
+    border-radius: 10px;
+  }
+
+  .profile-main {
+    padding: 14px;
+  }
+
+  .profile-main p {
+    font-size: 14px;
+  }
+
+  .profile-footer {
+    padding: 10px 14px;
+  }
+
+  .profile-pic {
+    width: 55px;
+    height: 55px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+  .profile-card {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .profile-main {
+    padding: 12px;
+  }
+
+  .profile-main p {
+    font-size: 13px;
+  }
+
+  .profile-footer {
+    padding: 8px 12px;
+  }
+
+  .profile-pic {
+    width: 45px;
+    height: 45px;
+  }
+
+  .profile-name {
+    font-size: 14px;
+  }
+}

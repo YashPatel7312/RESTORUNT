@@ -1,0 +1,41 @@
+.about-text-container {
+    max-width: 800px;
+    margin: 40px auto;
+    /* center container */
+    padding: 20px;
+    text-align: center;
+    /* center all text and button */
+}
+
+.about-header {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #212529;
+    text-transform: uppercase;
+}
+
+.about-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.about-button {
+    padding: 8px 16px;
+    color: #198754;
+    border: 1px solid #198754;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 48px;
+}
+
+.about-button:hover {
+    background-color: #198754;
+    color: #fff;
+    border: none;
+}

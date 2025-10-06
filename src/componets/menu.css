@@ -1,0 +1,200 @@
+/* ===================== */
+/* Parent Card */
+/* ===================== */
+.menu-card {
+  padding: 30px 10px;
+  width: 100%;
+}
+
+/* Themes */
+.menu-card.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu-card.dark {
+  background-color: #212529;
+  color: #fff;
+}
+
+/* Header */
+.menu-header {
+  font-size: 40px;
+  font-weight: 700;
+  color: #198754;
+  text-align: center;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+/* ===================== */
+/* Row (image + text) */
+/* ===================== */
+.menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 0px 50px;
+  margin: 3rem 115px !important;
+}
+
+/* Light → image left */
+.menu-row.light {
+  flex-direction: row;
+}
+
+/* Dark → image right */
+.menu-row.dark {
+  flex-direction: row-reverse;
+}
+
+/* ===================== */
+/* Image with border */
+/* ===================== */
+.menu-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0px 12px;
+}
+
+.image-wrapper {
+  border: 4px solid;
+  padding: 3px;
+}
+
+.menu-card.light .image-wrapper {
+  border-color: black;
+}
+
+.menu-card.dark .image-wrapper {
+  border-color: white;
+}
+
+/* Desktop size fixed */
+.menu-image img {
+  width: 409px;
+  height: 609px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===================== */
+/* Dishes */
+/* ===================== */
+.menu-dishes {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.dish-name {
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.dish-desc {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.dish-price {
+  font-size: 28px;
+  margin-top: 0;
+  font-weight: bold;
+  color: #198754;
+}
+
+/* ===================== */
+/* Responsive breakpoints */
+/* ===================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .menu-row {
+    gap: 40px;
+    margin: 2rem 40px !important;
+    padding: 0px 20px;
+  }
+
+  .menu-image img {
+    width: 300px;
+    height: auto;
+  }
+
+  .dish-name {
+    font-size: 24px;
+  }
+
+  .dish-desc {
+    font-size: 20px;
+  }
+
+  .dish-price {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-row.light,
+  .menu-row.dark {
+    flex-direction: column; /* stack */
+  }
+
+  .menu-row {
+    margin: 1.5rem 20px !important;
+    padding: 0px 10px;
+    gap: 20px;
+  }
+
+  .menu-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .dish-name {
+    font-size: 24px;
+  }
+
+  .dish-desc {
+    font-size: 20px;
+  }
+
+  .dish-price {
+    font-size: 24px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .menu-header {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .menu-image img {
+    max-width: 280px;
+  }
+
+  .dish-name {
+    font-size: 24px;
+  }
+
+  .dish-desc {
+    font-size: 20px;
+  }
+
+  .dish-price {
+    font-size: 24px;
+  }
+}

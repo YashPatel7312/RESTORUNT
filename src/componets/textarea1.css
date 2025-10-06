@@ -1,0 +1,70 @@
+.textarea-wrapper {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.ltext1 {
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+
+.ltext2 {
+  font-size: 16px;
+  margin: 0 0 48px 0;
+}
+
+.ltext3 {
+  font-size: 26px;
+  margin: 0 0 24px 0;
+}
+
+.hours {
+  line-height: 1.0;
+}
+
+.time1,
+.time2 {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  word-break: keep-all;      /* words break na thay */
+  white-space: nowrap;       /* akhi line ek sathe ave */
+  text-align: center;        /* center ma text */
+  display: block;            /* block banavi full width ma lai le */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .textarea-wrapper {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textarea-wrapper {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time1,
+  .time2 {
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap; /* line ek sathe ave */
+  }
+}
