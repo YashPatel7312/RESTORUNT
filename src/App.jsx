@@ -14,10 +14,14 @@ import MenuPage from "./pages/MenuPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
+// ScrollToTop import karo
+import ScrollToTop from "../src/componets/ScrollToTop";
+
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />  {/* <-- add here */}
       <div className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
