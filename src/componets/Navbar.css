@@ -1,117 +1,83 @@
 /* ===== Navbar Base ===== */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 54px;
-  width: 100%;
-  background: #F8F9FA;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
+  background: #F8F9FA !important;
   box-shadow: 0 .5rem 1rem #00000026 !important;
 }
+
 /* ===== Container ===== */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 16px;
+  padding: 0 16px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background: #F8F9FA;
 }
+
 /* ===== Logo ===== */
 .nav-logo {
-  color: #198754;
+  color: #198754 !important;
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
   white-space: nowrap;
   margin-left: 40px;
 }
-/* ===== Menu ===== */
+
+/* ===== Menu Links ===== */
 .nav-menu {
   display: flex;
   gap: 20px;
   list-style: none;
-  margin-right: 40px;
 }
+
 .nav-link {
   text-decoration: none;
-  color: #212529b4;
+  color: #212529b4 !important;
   font-size: 16px;
-  transition: color 0.15s ease-in-out;
   text-transform: uppercase;
+  transition: color 0.15s ease-in-out;
 }
+
 .nav-link:hover,
 .nav-link.active {
-  color: #000;
+  color: #000 !important;
 }
-/* ===== Hamburger ===== */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
-  padding: 0.25rem 0.75rem;
+
+/* ===== Hamburger Icon ===== */
+.navbar-toggler {
   border: 1px solid #000000;
   border-radius: 0.375rem;
 }
-.bar {
-  height: 3px;
-  width: 25px;
-  background: #000000a6;
-  border-radius: 3px;
+
+.navbar-toggler-icon {
+  filter: invert(0.4);
 }
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .nav-container {
-    margin: 0;
     padding: 0 12px;
   }
-  .nav-toggle {
-    display: flex;
-    margin-right: 40px;
-  }
+
   .nav-logo {
-    display: flex;
-    margin-left: 20px;
     font-size: 18px;
+    margin-left: 20px;
   }
+
   .nav-menu {
-    position: absolute;
-    top: 54px;
-    right: 0;
-    left: 0;
-    background: #F8F9FA;
     flex-direction: column;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    box-shadow: 0 .5rem 1rem #00000026;
+    gap: 0;
   }
-  .nav-menu.active {
-    max-height: 300px;
-    padding: 10px 0;
-    margin-top: 0 !important;
-  }
+
   .nav-menu li {
-    text-align: left;
-    padding: 5px 21px;
+    padding: 5px 15px;
   }
 }
-@media(max-width: 480px) {
-  .nav-toggle {
-    display: flex;
-    margin-right: 40px;
-  }
+
+@media (max-width: 480px) {
   .nav-logo {
-    display: flex;
-    margin-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }

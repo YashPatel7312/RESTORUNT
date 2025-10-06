@@ -4,14 +4,14 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
       <div className="container-fluid nav-container">
         {/* Logo */}
         <NavLink className="navbar-brand nav-logo" to="/">
           React Restaurant
         </NavLink>
 
-        {/* Toggle Button */}
+        {/* Hamburger Toggle */}
         <button
           className="navbar-toggler nav-toggle"
           type="button"
@@ -24,7 +24,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Menu Items */}
+        {/* Menu Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto nav-menu">
             <li className="nav-item">
