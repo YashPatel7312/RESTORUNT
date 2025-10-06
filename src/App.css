@@ -11,10 +11,6 @@ body {
 }
 
 
-.main-content {
-  padding-top: 56px;
-}
-
 /* ========== responive ============= */
 /* ========== small mobile========== */
 @media (max-width: 480px) {
